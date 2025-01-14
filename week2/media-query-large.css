@@ -1,16 +1,21 @@
-
+/* Media Query for larger screen sizes (500px and greater) */
 @media (min-width: 500px) {
+    :root {
+        --header-bg-color: black; /* Change header background to black */
+        --section-bg-color: #ffffff; /* Change section background to white */
+    }
+
     header {
-        background-color: black;
+        background-color: var(--header-bg-color); /* Apply new header background color */
         color: white;
     }
 
     main {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     }
 
     section {
-        background-color: #ffffff; 
+        background-color: var(--section-bg-color); /* Apply new section background color */
     }
 }

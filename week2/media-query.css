@@ -1,20 +1,33 @@
+/* Define global CSS variables */
+:root {
+    --primary-bg-color: #a3c2f7; /* Light blue background */
+    --header-bg-color: #4a90e2; /* Darker blue for header */
+    --footer-bg-color: #4a90e2; /* Dark blue for footer */
+    --section-bg-color: #f4f4f4; /* Light background for sections */
+    --section-text-color: #333; /* Text color for section */
+    --text-color: #333; /* General text color */
+    --max-width: 640px; /* Max width for content */
+    --gap-size: 1rem; /* Gap size for grid */
+}
+
 /* Base Styles for the Document */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    color: var(--text-color); /* Use variable for text color */
 }
 
 header, main, footer {
-    max-width: 640px;
+    max-width: var(--max-width); /* Use variable for max-width */
     margin: 1rem auto;
     border: 1px solid #ccc;
     padding: 1rem;
-    background-color: #a3c2f7; /* Light blue background */
+    background-color: var(--primary-bg-color); /* Use variable for background color */
 }
 
 header {
-    background-color: #4a90e2; /* Darker blue for the header */
+    background-color: var(--header-bg-color); /* Use variable for header background */
     color: white;
     text-align: center;
 }
@@ -22,17 +35,18 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--gap-size); /* Use variable for gap */
 }
 
 section {
     padding: 1rem;
-    background-color: #f4f4f4; /* Light background for the section */
+    background-color: var(--section-bg-color); /* Use variable for section background */
+    color: var(--section-text-color); /* Use variable for section text color */
     border-radius: 4px;
 }
 
 footer {
-    background-color: #4a90e2; /* Matching blue for footer */
+    background-color: var(--footer-bg-color); /* Use variable for footer background */
     color: white;
     text-align: center;
 }
