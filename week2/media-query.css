@@ -10,6 +10,7 @@
     --gap-size: 1rem; /* Gap size for grid */
 }
 
+@media (min-width: 450px){
 /* Base Styles for the Document */
 body {
     font-family: 'Roboto', sans-serif;
@@ -33,7 +34,7 @@ header {
 }
 
 main {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr;
     gap: var(--gap-size); /* Use variable for gap */
 }
@@ -54,4 +55,6 @@ footer {
 /* Make links or interactive elements more accessible */
 a:focus, a:hover {
     outline: 2px solid #1a73e8;
+}
+
 }
