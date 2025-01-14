@@ -1,10 +1,10 @@
 /* Base styles */
 :root {
-    --primary-color: #2b3945;
-    --secondary-color: #3e5c76;
-    --accent-color: #f0f4f8;
-    --text-color: #333;
-    --link-color: #1a73e8;
+    --primary-color: #2b3945; /* Darker shade for better contrast */
+    --secondary-color: #3e5c76; /* Slightly darker for better contrast */
+    --accent-color: #f0f4f8; /* Lighter background color */
+    --text-color: #333333; /* Darker gray for body text */
+    --link-color: #1a73e8; /* Blue for links */
 }
 
 body {
@@ -114,3 +114,7 @@ body, h1, h2, a {
     color: #333; /* Ensure text color is dark enough for contrast */
 }
 
+/* Better color contrast for links */
+nav a:focus, .card a:focus {
+    outline: 2px solid #1a73e8; /* Add focus outline for accessibility */
+}
