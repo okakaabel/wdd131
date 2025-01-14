@@ -1,0 +1,16 @@
+/* Media Query for larger screen sizes (500px and greater) */
+@media (min-width: 500px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    }
+
+    section {
+        background-color: #ffffff; /* Lighter background for sections in larger view */
+    }
+}
