@@ -1,6 +1,6 @@
-/* Large Screen Styles (768px and up) */
+
 @media screen and (min-width: 768px) {
-    /* Header Styles */
+    
     header {
         padding: 1rem 2rem;
     }
@@ -9,9 +9,9 @@
         margin-bottom: 0;
     }
 
-    /* Navigation Styles */
+    
     #hamburgerBtn {
-        display: none; /* Hide hamburger button on larger screens */
+        display: none;
     }
 
     nav ul {
@@ -37,32 +37,32 @@
         color: var(--primary-color);
     }
 
-    /* Temple Grid Styles */
+   
     .temple-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid for better flexibility */
-    }
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
 
-/* Extra Large Screen Styles (1024px and up) */
+
 @media screen and (min-width: 1024px) {
     .temple-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns layout for larger screens */
+        grid-template-columns: repeat(3, 1fr); 
     }
 
-    /* Adjustments for header layout and spacing */
+   
     header {
         padding: 2rem 3rem;
     }
 
     main h2 {
-        font-size: 2rem; /* Larger font size for main heading on big screens */
+        font-size: 2rem; 
     }
 
     .temple-grid figure {
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Slightly larger shadow for figures */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
     }
 
     footer p {
-        font-size: 1rem; /* Larger footer text for readability */
+        font-size: 1rem; 
     }
+}
 }
