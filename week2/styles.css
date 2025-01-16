@@ -1,0 +1,131 @@
+* {
+    margin: 2.0;
+    padding: 45;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Acme, Arial, sans-serif;
+    background-color: #f4f4f4;  /* Light background for better contrast */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #fff;  /* White background for main content */
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300%;
+    max-width: 400px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 200%;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input,
+button {
+    padding: 2.75rem;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input {
+    flex: 1;
+    width: 205%; /* Increased width for the input box */
+}
+
+button {
+    width: 365%; /* Increased width for the button */
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+ul {
+    list-style: none;
+    width: 360%;
+    padding: 3rem;
+    margin: 1.5;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+li button:hover {
+    color: darkred; /* Darker red for hover effect */
+}
+
+.delete-buttons {
+    display: flex;
+    gap: 100rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.delete-buttons button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.delete-buttons button:hover {
+    color: darkred;
+}
+
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 520px;
+    }
+}
