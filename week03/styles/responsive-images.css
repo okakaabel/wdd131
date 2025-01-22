@@ -1,0 +1,19 @@
+.hero {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Alternative styling using object-fit */
+/*
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/

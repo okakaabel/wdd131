@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the vibrant culture, history, and modern marvels of Tokyo, Japan.">
+    <title>Tokyo, Japan - A Modern Marvel</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/windchill.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tokyo-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/tokyo-medium.webp" media="(min-width: 500px)">
+                <img src="images/tokyo.webp" alt="Tokyo skyline with Mount Fuji in the background" width="1500" height="750" loading="lazy">
+            </picture>
+        </div>
+    </header>
+
+    <main>
+        <h1>Tokyo, Japan</h1>
+        <section class="intro">
+            <p>Experience the perfect blend of tradition and technology in Japan's bustling capital. From ancient temples to futuristic skyscrapers, Tokyo offers an unforgettable journey through time.</p>
+        </section>
+
+        <section class="stats">
+            <h2>Statistics</h2>
+            <ul>
+                <li>Population: 37 million (metro area)</li>
+                <li>Area: 2,194 km²</li>
+                <li>Founded: 1457</li>
+                <li>Time Zone: JST (UTC+9)</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <div class="weather-icon">
+                    <img src="images/partly-cloudy.svg" alt="Partly cloudy weather icon" class="mobile-weather-icon">
+                </div>
+                <div class="weather-data">
+                    <p>Temperature: <span id="temperature">15</span>°C</p>
+                    <p>Wind Speed: <span id="windspeed">8</span> km/h</p>
+                    <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="places">
+            <h2>Notable Places</h2>
+            <div class="place-cards">
+                <div class="card">
+                    <img src="images/sensoji.webp" alt="Sensoji Temple" loading="lazy">
+                    <h3>Sensoji Temple</h3>
+                    <p>Tokyo's oldest Buddhist temple, founded in 645 CE.</p>
+                </div>
+                <div class="card">
+                    <img src="images/shibuya.webp" alt="Shibuya Crossing" loading="lazy">
+                    <h3>Shibuya Crossing</h3>
+                    <p>The world's busiest pedestrian crossing.</p>
+                </div>
+                <div class="card">
+                    <img src="images/skytree.webp" alt="Tokyo Skytree" loading="lazy">
+                    <h3>Tokyo Skytree</h3>
+                    <p>The world's tallest tower at 634 meters.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
