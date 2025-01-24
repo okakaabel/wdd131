@@ -8,6 +8,9 @@
     <title>Tokyo, Japan - A Modern Marvel</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/windchill.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,7 +18,7 @@
             <picture>
                 <source srcset="images/tokyo-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/tokyo-medium.webp" media="(min-width: 500px)">
-                <img src="/images/Tokyo.webp" alt="Tokyo skyline with Mount Fuji in the background" width="1500" height="750" loading="lazy">
+                <img src="images/Tokyo.webp" alt="Tokyo skyline with Mount Fuji in the background" width="1500" height="750" loading="lazy">
             </picture>
         </div>
     </header>
@@ -40,7 +43,7 @@
             <h2>Weather</h2>
             <div class="weather-info">
                 <div class="weather-icon">
-                    <img src="images/Partlycloudy.svg" alt="Partly cloudy weather icon" class="mobile-weather-icon">
+                    <img src="/images/Partlycloudy.svg" alt="Partly cloudy weather icon" class="mobile-weather-icon">
                 </div>
                 <div class="weather-data">
                     <p>Temperature: <span id="temperature">15</span>°C</p>
@@ -54,6 +57,7 @@
             <h2>Notable Places</h2>
             <div class="place-cards">
                 <div class="card">
+                    <!-- Ensure that these WebP images are optimized and exist -->
                     <img src="images/Sensoji.webp" alt="Sensoji Temple" loading="lazy">
                     <h3>Sensoji Temple</h3>
                     <p>Tokyo's oldest Buddhist temple, founded in 645 CE.</p>
@@ -64,7 +68,7 @@
                     <p>The world's busiest pedestrian crossing.</p>
                 </div>
                 <div class="card">
-                    <img src="images/TokyoSkytree.webp" alt="Tokyo Skytree" loading="lazy">
+                    <img src="images/Tokyo Skytree.webp" alt="Tokyo Skytree" loading="lazy">
                     <h3>Tokyo Skytree</h3>
                     <p>The world's tallest tower at 634 meters.</p>
                 </div>
