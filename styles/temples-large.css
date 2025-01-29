@@ -1,6 +1,4 @@
-
 @media screen and (min-width: 768px) {
-    
     header {
         padding: 1rem 2rem;
     }
@@ -9,7 +7,6 @@
         margin-bottom: 0;
     }
 
-    
     #hamburgerBtn {
         display: none;
     }
@@ -37,32 +34,29 @@
         color: var(--primary-color);
     }
 
-   
     .temple-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
 }
-
 
 @media screen and (min-width: 1024px) {
     .temple-grid {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr);
     }
 
-   
     header {
         padding: 2rem 3rem;
     }
 
     main h2 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     .temple-grid figure {
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
     footer p {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
-}
 }
