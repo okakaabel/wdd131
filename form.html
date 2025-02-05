@@ -7,6 +7,10 @@
     <meta name="keywords" content="Product review, rating, form, reviews">
     <meta name="author" content="Your Name">
     <title>Product Review Form</title>
+    
+    <!-- Google Fonts Embed (Replaced @import with link tag) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap">
+
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
@@ -59,6 +63,11 @@
                         <input type="checkbox" id="feature3" name="features" value="performance">
                         <label for="feature3">Performance</label>
                     </div>
+                    <!-- Added 4th checkbox -->
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="feature4" name="features" value="affordability">
+                        <label for="feature4">Affordability</label>
+                    </div>
                 </div>
             </div>
 
@@ -80,6 +89,7 @@
         <p>&copy; 2025 Product Review System</p>
     </footer>
 
-    <script src="scripts/form.js"></script>
+    <!-- Added defer attribute to the script tag -->
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
